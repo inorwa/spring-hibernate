@@ -1,0 +1,14 @@
+/*C4*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C5*/SET SCHEMA PUBLIC
+drop table users if exists
+create table users (login varchar(255) not null, famioly_name varchar(255), first_name varchar(255), primary key (login))
+INSERT INTO USERS VALUES('login','familyName','name')
+COMMIT
+DELETE FROM USERS WHERE LOGIN='login'
+COMMIT
+INSERT INTO USERS VALUES('testuser1','test','user')
+COMMIT
+INSERT INTO USERS VALUES('testuser2','test','user')
+COMMIT
+DISCONNECT
